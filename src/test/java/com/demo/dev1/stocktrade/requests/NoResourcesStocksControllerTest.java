@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade.requests;
+package com.demo.dev1.stocktrade.requests;
 
 import com.hackerrank.test.utility.TestWatchman;
 import org.junit.AfterClass;
@@ -13,12 +13,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.rules.SpringClassRule;
 import org.springframework.test.context.junit4.rules.SpringMethodRule;
 import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ResourcesControllerTest {
+public class NoResourcesStocksControllerTest {
 
     @ClassRule
     public static final SpringClassRule springClassRule = new SpringClassRule();
@@ -34,27 +34,27 @@ public class ResourcesControllerTest {
 
     @BeforeClass
     public static void setUpClass() {
-        TestWatchman.watchman.registerClass(ResourcesControllerTest.class);
+        TestWatchman.watchman.registerClass(NoResourcesStocksControllerTest.class);
     }
 
     @AfterClass
     public static void tearDownClass() {
-        TestWatchman.watchman.createReport(ResourcesControllerTest.class);
+        TestWatchman.watchman.createReport(NoResourcesStocksControllerTest.class);
     }
 
     /**
      *
      * @throws Exception
      *
-     * It tests erasing all the records
+     * It tests finding highest and lowest price by stock symbol in given date range
      */
     @Test
-    public void eraseAllRecords() throws Exception {
+    public void findHighestAndLowestPriceByNonExistingStockSymbolInDateRange() throws Exception {
         /**
          *
-         * Erase all the trades records including user records
+         * Find highest and lowest price by stock symbol A in given date range 2017-01-05 and 2017-01-06 inclusive
          */
-        mockMvc.perform(delete("/erase"))
-            .andExpect(status().isOk());
+        mockMvc.perform(get("/stocks/A/price?start=2017-01-05&end=2017-01-06"))
+                .andExpect(status().isNotFound());
     }
 }

@@ -1,6 +1,6 @@
-package com.hackerrank.stocktrade;
+package com.demo.dev1.stocktrade;
 
-import com.hackerrank.stocktrade.requests.*;
+import com.demo.dev1.stocktrade.requests.*;
 import com.hackerrank.test.utility.TestWatchman;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;

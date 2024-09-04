@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade.requests;
+package com.demo.dev1.stocktrade.requests;
 
 import com.hackerrank.test.utility.Order;
 import com.hackerrank.test.utility.OrderedTestRunner;

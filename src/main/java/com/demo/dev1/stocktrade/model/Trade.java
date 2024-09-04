@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade.model;
+package com.demo.dev1.stocktrade.model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

@@ -1,12 +1,12 @@
-package com.hackerrank.stocktrade.service;
+package com.demo.dev1.stocktrade.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hackerrank.stocktrade.model.Trade;
-import com.hackerrank.stocktrade.repository.TradeRepository;
+import com.demo.dev1.stocktrade.model.Trade;
+import com.demo.dev1.stocktrade.repository.TradeRepository;
 
 @Service
 public class TradeService {

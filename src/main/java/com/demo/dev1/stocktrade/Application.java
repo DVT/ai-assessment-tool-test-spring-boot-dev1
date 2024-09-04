@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade;
+package com.demo.dev1.stocktrade;
 
 import java.util.TimeZone;
 import javax.annotation.PostConstruct;

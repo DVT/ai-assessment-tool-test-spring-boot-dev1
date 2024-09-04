@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade.controller;
+package com.demo.dev1.stocktrade.controller;
 
 import java.util.List;
 
@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hackerrank.stocktrade.model.Trade;
-import com.hackerrank.stocktrade.service.TradeService;
-import com.hackerrank.stocktrade.service.UserService;
+import com.demo.dev1.stocktrade.model.Trade;
+import com.demo.dev1.stocktrade.service.TradeService;
 
 @RestController
 @RequestMapping(value = "/trades")

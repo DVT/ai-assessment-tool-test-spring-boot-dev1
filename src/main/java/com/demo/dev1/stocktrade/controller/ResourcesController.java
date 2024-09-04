@@ -1,4 +1,4 @@
-package com.hackerrank.stocktrade.controller;
+package com.demo.dev1.stocktrade.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hackerrank.stocktrade.model.Trade;
+import com.demo.dev1.stocktrade.model.Trade;
 
 @RestController
 @RequestMapping(value = "/erase")
